@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <title>Geocoding Task</title>
+        <meta name="description" content="Task to implement JQuery/AJAX/PHP/cURL.">
+        <meta name="author" content="Sam Stoppani">
+
+        <link rel="stylesheet" href="libs/css/main.css">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+
+    </head>
+
+    <body>
+
+        <section>
+
+            <h1>Geocoding Task</h1>
+  
+                <span>Choose a latitude:</span>
+                <input name="lat" id="lat"></input> 
+                <span>(Range between -90 to 90)</span>
+                <br>
+                <span>Choose a longitude:</span>
+                <input name="lng" id="lng"></input>
+                <span>(Range between -180 to 180)</span>
+                <br>
+                <input type="submit" value="Get Ocean" id="submitBtn">
+
+            <table>
+                <tr>
+					<td>
+						Status: 
+					</td>
+					<td id="status">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Ocean: 
+					</td>
+					<td id="ocean">
+					</td>
+				</tr>
+				<tr>
+					<td >
+						ID: 
+					</td>
+					<td id="geonameId">
+					</td>
+				</tr>
+			</table>
+
+        </section>
+
+        <script type="text/javascript" src="libs/js/jquery-2.2.3.min.js"></script>
+        <script type="text/javascript" src="libs/js/main.js"></script>
+
+    </body>
+
+</html>
